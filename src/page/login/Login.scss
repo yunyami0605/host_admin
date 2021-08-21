@@ -1,0 +1,18 @@
+.login__page {
+  height: 100%;
+
+  .login__form {
+    width: 340px;
+
+    & > input {
+      border-radius: 0;
+      height: 54px;
+    }
+
+    & > button {
+      height: 54px;
+      background-color: #4faafe;
+      border-radius: 0;
+    }
+  }
+}

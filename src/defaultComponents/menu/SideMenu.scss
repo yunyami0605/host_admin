@@ -1,0 +1,46 @@
+.sidemenu__container {
+  position: absolute;
+  top: 140px;
+  left: -180px;
+
+  width: 180px;
+  height: 780px;
+  background: #4faafe;
+  z-index: 9999;
+
+  transition: 300ms left cubic-bezier(0.77, 0, 0.175, 1);
+
+  // & li {
+  //   border: 1px solid black;
+  // }
+
+  & > button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  & > ul {
+    width: 100%;
+    padding: 0;
+  }
+
+  & a {
+    color: #ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    width: 100%;
+    height: 144px;
+    line-height: 144px;
+    margin: 24px 0;
+  }
+}
+
+.active {
+  left: 0;
+}
