@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.scss";
 import { Route, BrowserRouter, Switch } from "react-router-dom";
 import Login from "./page/login/Login";
@@ -6,8 +6,14 @@ import Main from "./page/main/Main";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Member from "./page/member/Member";
 import BookList from "./page/booklist/BookList";
+import BookInfo from "page/bookInfo/BookInfo";
+import * as firebase from "firebase/app";
+import { firebaseConfig } from "firebase";
+
+firebase.initializeApp(firebaseConfig);
 
 function App() {
+  useEffect(() => {}, []);
   return (
     <div className="App">
       <BrowserRouter>
@@ -24,6 +30,10 @@ function App() {
           </Route>
           <Route path="/BookList">
             <BookList />
+          </Route>
+
+          <Route path="/bookinfo/:id">
+            <BookInfo />
           </Route>
         </Switch>
       </BrowserRouter>

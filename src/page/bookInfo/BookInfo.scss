@@ -1,0 +1,31 @@
+.bookinfo__page {
+  padding: 14px 22px;
+  flex-direction: column;
+
+  & > div {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  & > p {
+    margin-bottom: 32px;
+  }
+
+  & > div,
+  & > p {
+    width: 100%;
+    text-align: start;
+  }
+
+  & tbody {
+    & td {
+      line-height: 36px;
+    }
+  }
+
+  .chapterlist__line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
